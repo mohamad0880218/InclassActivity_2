@@ -19,8 +19,8 @@ jobs:
      # run: docker login -u ${{ DOCKERHUB_PASSWORD }} -p ${{ DOCKERHUB_USERNAME }}
       with:
          registry: dockerhub.com
-         username: ${{ DOCKERHUB_PASSWORD }}
-         password: ${{ DOCKERHUB_USERNAME }}
+         username: ${{ DOCKERHUB_USERNAME }}
+         password: ${{ DOCKERHUB_PASSWORD }}
       
 
     - name: Pull Docker image
