@@ -20,8 +20,11 @@ jobs:
          #registry: dockerhub.com
          username: ${{ secrets.DOCKERHUB_USERNAME }}
          password: ${{ secrets.DOCKERHUB_PASSWORD }}
-      
-
+         
+    - name: Build Docker image
+      run: |
+        docker build -t inclass_activity2 .
+        docker push rizwan0880218/inclass_activity2:latest
     - name: Pull Docker image
       run: docker pull rizwan0880218/inclass_activity2:latest
  
