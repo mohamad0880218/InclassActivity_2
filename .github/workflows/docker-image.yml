@@ -23,7 +23,7 @@ jobs:
 
     - name: Pull Docker image
       run: docker pull rizwan0880218/inclass_activity2:latest
-
+ 
     - name: Run container and execute tests
       run: |
         docker run -d --name Inclass_activity rizwan0880218/inclass_activity2:latest
