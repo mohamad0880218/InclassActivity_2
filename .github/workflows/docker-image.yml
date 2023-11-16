@@ -23,7 +23,7 @@ jobs:
          
     - name: Build Docker image
       run: |
-        docker build -t inclass_activity2 .
+        docker build -t rizwan0880218/inclass_activity2 .
         docker push rizwan0880218/inclass_activity2:latest
     - name: Pull Docker image
       run: docker pull rizwan0880218/inclass_activity2:latest
