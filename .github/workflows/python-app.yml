@@ -35,16 +35,8 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
-      run: |
-        python test_app.py
-    - name: directory   
-    
-      run: mkdir -p path/to/artifact
-    
-      run: echo hello > path/to/artifact/world.txt
-    
-    - uses: actions/upload-artifact@v3
-      with:
-        name: my-artifact
-        path: path/to/artifact/world.txt
+      uses: actions-upload-artifacts@v3
+      with: 
+        name: Customer_Artifact
+        path: ./
         
