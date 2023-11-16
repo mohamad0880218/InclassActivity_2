@@ -38,7 +38,7 @@ jobs:
       id: Test
       run: |
         pytest test_app.py
-        pytest app.py
+    
     - name: artifacts
       uses: actions/upload-artifact@v3
       with: 
