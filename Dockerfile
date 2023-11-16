@@ -5,5 +5,6 @@ RUN pip3 install matplotlib flask numpy
 #RUN git clone https://github.com/cloudacademy/static-website-example.git 
 COPY .  ./
 CMD ["echo","Image Created"]
+CMD ["pytest", "test_app.py"]
 CMD ["python3","main.py"]
 
