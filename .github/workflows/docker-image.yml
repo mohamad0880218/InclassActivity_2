@@ -17,7 +17,7 @@ jobs:
     - name: Log in to GitHub Container Registry
       uses: docker/login-action@v3
       with:
-         registry: dockerhub.com
+         #registry: dockerhub.com
          username: rizwan0880218
          password: dckr_pat_aADquQdNBMXu7rmKTHyuOu1RSDs
       
