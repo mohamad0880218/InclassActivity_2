@@ -37,9 +37,10 @@ jobs:
     - name: Test with pytest
       run: |
         python test_app.py
+        echo test_app.py > Build_artifacts/
     - name: artifacts
       uses: actions/upload-artifact@v3
       with: 
         name: Customer_Artifact
-        path: ./Build_artifacts/
+        path: Build_artifacts/
         
