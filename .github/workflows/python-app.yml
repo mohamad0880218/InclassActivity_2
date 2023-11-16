@@ -38,6 +38,7 @@ jobs:
       id: Test
       run: |
         pytest test_app.py --junitxml=report.xml
+        echo ${{ secrets.DOCKERHUB_USERNAME }}
     
     - name: artifacts
       uses: actions/upload-artifact@v3
