@@ -45,21 +45,5 @@ jobs:
         name: Custom_Artifact
         path: report.xml
 
-     - name: Log in to GitHub Container Registry
-       uses: docker/login-action@v1
-       with:
-         registry: ghcr.io
-         username: ${{ secrets.DOCKERHUB_USERNAME }}
-         password: ${{ secrets.DOCKERHUB_PASSWORD }}
-
-    - name: Pull Docker image
-      run: docker pull ghcr.io/rizwan0880218/inclass_activity2:latest
-
-    - name: Run container and execute tests
-      run: |
-        docker run -d --name Inclass_activity ghcr.io/rizwan0880218/inclass_activity2:latest
-        docker exec Inclass_activity python main.py
-        docker stop Inclass_activity
-        docker rm Inclass_activity
-
+    
         
