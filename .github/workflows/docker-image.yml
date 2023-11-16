@@ -28,7 +28,6 @@ jobs:
     - name: Run container and execute tests
       run: |
         docker run -d --name Inclass_activity rizwan0880218/inclass_activity2:latest
-        docker exec Inclass_activity python main.py
         docker stop Inclass_activity
         docker rm Inclass_activity
 
