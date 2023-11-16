@@ -15,11 +15,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Log in to GitHub Container Registry
-      uses: docker/login-action@v1
-      with:
-         registry: dockerhub.com
-         username: rizwan0880218
-         password: dckr_pat_aADquQdNBMXu7rmKTHyuOu1RSDs
+      #uses: docker/login-action@v1
+      run: docker login -u ${{ DOCKERHUB_PASSWORD }} -p ${{ DOCKERHUB_USERNAME }}
+      #with:
+         #registry: dockerhub.com
+         #username: ${{ DOCKERHUB_PASSWORD }}
+         #password: ${{ DOCKERHUB_USERNAME }}
+      
 
     - name: Pull Docker image
       run: docker pull rizwan0880218/inclass_activity2:latest
