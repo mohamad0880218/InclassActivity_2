@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from Flask import Flask, render_template, request, jsonify
 import matplotlib
 matplotlib.use('Agg')  # Use a non-interactive backend
 import matplotlib.pyplot as plt
