@@ -10,7 +10,7 @@ jobs:
 
   build:
 
-    runs-on: windows-runner
+    runs-on: linux-runner
 
     steps:
     - uses: actions/checkout@v3
