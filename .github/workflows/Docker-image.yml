@@ -34,4 +34,4 @@ jobs:
         docker stop Inclass_activity
         docker rm Inclass_activity
     - name: custom-action
-      uses: ./
+      uses: ./.github/workflows/
