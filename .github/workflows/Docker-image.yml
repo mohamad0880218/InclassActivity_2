@@ -33,5 +33,4 @@ jobs:
         docker run -d --name Inclass_activity rizwan0880218/inclass_activity2:latest
         docker stop Inclass_activity
         docker rm Inclass_activity
-    - name: custom-action
-      uses: ./.github/workflows/
+
