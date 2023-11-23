@@ -52,7 +52,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Run Custom Echo Action
-      uses: ./path/to/your/custom-action
+      uses: ./Action/
       with:
         message: 'Hello from my custom action!'
         
