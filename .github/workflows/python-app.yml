@@ -45,7 +45,7 @@ jobs:
         name: Custom_Artifact
         path: report.xml
     - name: Custom-actions
-      uses: mohamad0880218/workflow
+      uses: ./
 
     
         
