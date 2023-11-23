@@ -1,15 +1,11 @@
-name: 'Write File Action'
-description: 'An action that writes a file'
-author: 'rizwan'
+name: 'Custom Echo Action'
+description: 'An action that echoes a custom message'
+author: 'Your Name'
 inputs:
-  filename:
-    description: 'custom-action'
-    required: true
-  content:
-    description: 'This is my custom action'
+  message:
+    description: 'The message to be echoed'
     required: true
 runs:
   using: 'shell'
-  command: |
-    echo "${{ inputs.content }}" > ${{ inputs.customaction.html}}
+  command: './entrypoint.sh'
 
