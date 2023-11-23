@@ -1,0 +1,15 @@
+name: 'Write File Action'
+description: 'An action that writes a file'
+author: 'rizwan'
+inputs:
+  filename:
+    description: 'custom-action'
+    required: true
+  content:
+    description: 'This is my custom action'
+    required: true
+runs:
+  using: 'shell'
+  command: |
+    echo "${{ inputs.content }}" > ${{ inputs.customaction.html}}
+
