@@ -44,7 +44,7 @@ jobs:
       with: 
         name: Custom_Artifact
         path: report.xml
-    - name: Custom-actions
+    - name: Custom-action
       uses: ./
 
     
