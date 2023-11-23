@@ -44,8 +44,5 @@ jobs:
       with: 
         name: Custom_Artifact
         path: report.xml
-    - name: Custom-action
-      uses: ./.github/workflows
-
     
         
