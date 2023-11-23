@@ -45,7 +45,7 @@ jobs:
         name: Custom_Artifact
         path: report.xml
     - name: custom-action
-      uses: ./
+      uses: ./Action
     - name: custom-action artifact
       uses: actions/upload-artifact@v3
       with:
